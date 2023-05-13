@@ -1,0 +1,292 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+/* セレクタ {
+    font-family: 'Noto Sans JP', sans-serif;
+} */
+
+
+
+
+
+nav {
+  font-family: 'Sacramento', cursive;
+  text-align:  center;  
+  width: 100%;
+  padding-top: 10px;
+  padding: 20px;
+  background-color: black;
+  color: aliceblue;
+}
+
+.flex {
+  display: -webkit-flex;
+  /* display: flex; */
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+
+
+/* div.left {
+  text-align: left; 
+} */
+
+.fusen-003 {
+  border: 1px solid #000000;
+  align-items: center;
+  position: relative;
+  width: 800px;
+  height: 240px;
+  padding: 1em 2.2em;
+  background-color: #ffffff;
+  color: #333333;
+  text-align: left; 
+}
+
+.list {
+
+  text-align: left;
+	display: inline-block;
+}
+
+.fusen-003::before {
+  position: absolute;
+  bottom: -5px;
+  right: 7px;
+  z-index: -1;
+  transform: rotate(5deg);
+  width: 50%;
+  height: 50%;
+  background-color: #d0d0d0;
+  content: "";
+  filter: blur(4px);
+}
+
+.breadcrumb-004 {
+  font-family: 'Noto Sans JP', sans-serif;
+  display: flex;
+  gap: 0 20px;
+  list-style: none;
+  padding: 6px 0 6px 18px;
+  border-radius: 3px;
+  overflow: hidden;
+  background-color: #000000;
+  font-size: .9em;
+}
+
+.breadcrumb-004 li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-right: 20px;
+}
+
+.breadcrumb-004 li:first-child a::before {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 4px;
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M11.7%207.5%204%2013.8v6.8c0%20.4.3.7.7.7h4.7c.4%200%20.7-.3.7-.7v-4c0-.4.3-.7.7-.7h2.7c.4%200%20.7.3.7.7v4c0%20.4.3.7.7.7h4.7c.4%200%20.7-.3.7-.7v-6.8l-7.7-6.3h-.9zm12.1%204.4L20.3%209V3.2c0-.3-.2-.5-.5-.5h-2.3c-.3%200-.5.2-.5.5v2.9L13.3%203c-.7-.6-1.8-.6-2.5%200L.2%2011.8c-.2.2-.3.5-.1.7l1.1%201.3c.2.2.5.2.7.1l9.8-8.1h.6l9.8%208.1c.2.2.5.1.7-.1l1.1-1.3c.2-.2.1-.5-.1-.6z%22%20style%3D%22fill%3A%23fff%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  vertical-align: text-bottom;
+  content: '';
+}
+
+.breadcrumb-004 li:not(:last-child)::before,
+.breadcrumb-004 li:not(:last-child)::after{
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  content:'';
+}
+
+.breadcrumb-004 li:not(:last-child)::before{
+  right: 0;
+  border-left: 10px solid #fff;
+}
+
+.breadcrumb-004 li:not(:last-child)::after{
+  right: 2px;
+  border-left: 10px solid #000000;
+}
+
+.breadcrumb-004 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+.centering_about {
+  font-family: 'Noto Sans JP', sans-serif;
+  padding: 20px;              /* 余白指定 */
+  text-align:  center;        /* 中央寄せ */
+  /* background-color:  rgb(221, 221, 221);    背景色指定 */
+  height: 100px;              /* 高さ指定 */
+
+}
+
+
+/* ----------- iPhone 11 Pro ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: center) {
+    /* 左寄せ */
+    ul{
+      padding-left: 20;
+    }
+
+}
+
+/* 画像サイズを常にウィンドウ幅に設定 */
+img {
+  width: 50%;
+  height: auto;
+}
+
+/* Copyrightをセンタリング */
+footer{
+  text-align: center;
+}
+
+  
+  a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-right: 35px;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+
+
+  /* .g-slide{
+    position: relative;
+    overflow: hidden;
+    /* margin: 50px 0 20px 0;
+    padding-bottom: 50%;
+    padding-top: 65px; */
+    
+  /* img.task2_seiza {
+    justify-content: center;
+    display: flex;
+      width: 50%;
+      height: auto;
+  }
+  
+  img.task3_map.png {
+      width: 50%;
+      height: auto;
+    } */
+
+/* productpage */
+
+
+
+.heading-041 {
+  display: flex;
+  align-items: center;
+  padding: .5em .7em;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.heading-041::before {
+  display: inline-block;
+  width: 5px;
+  height: 1.5em;
+  margin-right: .5em;
+  background-color: #ffffff;
+  content: '';
+}
+
+
+.card-group{
+  justify-content: center;
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* max-width: 640px;*/
+  /* width: 50%; */
+  /* height: auto; */
+   /* ポイント１ */
+  display: flex;
+  /* flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start; */
+}
+
+.card-group > :nth-child(2n){
+  margin-left: 20px;
+}  
+
+.card-group > :nth-child(n+3){
+  margin-top: 50px;
+}  
+
+.card{
+  /* width: 480px; */
+  overflow: scroll;
+  /* box-shadow: 0 4px 15px rgba(0,0,0,.2) */
+}
+
+.box-013 {
+  max-width: 480px;
+  margin: 0 auto;
+  border: 2px solid #000000;
+  border-radius: 3px;
+
+}
+
+.box-013 span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5em 0;
+  background-color: #000000;
+  color: #fff;
+  font-weight: 600;
+}
+
+.box-013 p {
+  margin: 0;
+  padding: 1em 1.5em;
+  color: #333;
+  overflow: scroll;
+}
+
+
+
+
+
+
+
+
+
+
+
+    footer{
+      font-family: 'Noto Sans JP', sans-serif;
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+      background-color: black;
+      color: aliceblue;
+    }
